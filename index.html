@@ -1,467 +1,297 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#0b1020" />
-  <meta name="description" content="Portfolio Raehan Yanuar — Trainer / QC SDM, Process Improvement, dan Internal System Development." />
-  <title>Raehan Yanuar — Portfolio</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b1020">
+<meta name="description" content="Portfolio Raehan Yanuar — Trainer / QC SDM, Process Improvement, dan Internal System Development.">
+<title>Raehan Yanuar — Portfolio</title>
+<style>
+:root{--bg:#f4f1ea;--soft:#ebe7de;--card:#fff;--text:#13161c;--muted:#6b707b;--line:rgba(18,22,30,.12);--accent:#2458f4;--dark:#0b1020;--shadow:0 24px 80px rgba(18,25,45,.13);--r:28px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font:15px/1.65 Arial,Helvetica,sans-serif;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+button{font:inherit}
+.wrap{width:min(1160px,calc(100% - 34px));margin:auto}
+.section{padding:100px 0}
+.eyebrow{font-size:11px;font-weight:800;letter-spacing:.17em;color:var(--accent);margin:0 0 18px}
+.muted{color:var(--muted)}
+header{position:sticky;top:0;z-index:20;backdrop-filter:blur(18px);background:rgba(244,241,234,.82);border-bottom:1px solid var(--line)}
+nav{height:70px;display:flex;align-items:center;gap:24px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800}
+.mark{width:38px;height:38px;border-radius:12px;background:var(--text);color:var(--bg);display:grid;place-items:center;font-size:12px}
+.navlinks{margin-left:auto;display:flex;gap:24px;color:var(--muted);font-size:13px}
+.navlinks a:hover{color:var(--text)}
+.menu{display:none;margin-left:auto;width:44px;height:44px;border:1px solid var(--line);border-radius:50%;background:transparent}
+.hero{min-height:calc(100vh - 70px);display:flex;align-items:center;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;width:480px;height:480px;border:1px solid var(--line);border-radius:50%;right:-180px;top:70px;box-shadow:0 0 0 80px rgba(255,255,255,.025),0 0 0 160px rgba(255,255,255,.015)}
+.heroGrid{display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:80px;position:relative;z-index:1}
+.hero h1,.section h2{letter-spacing:-.055em;line-height:.98;margin:0}
+.hero h1{font-size:clamp(52px,7vw,92px)}
+.hero h1 span,.section h2 span{color:var(--muted);font-weight:500}
+.hero p.lead{max-width:690px;font-size:17px;color:var(--muted);margin:30px 0}
+.actions{display:flex;flex-wrap:wrap;gap:10px}
+.btn{min-height:48px;padding:0 19px;border-radius:999px;border:1px solid var(--line);display:inline-flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;transition:.25s;cursor:pointer}
+.btn:hover{transform:translateY(-2px)}
+.primary{background:var(--text);color:var(--bg);border-color:var(--text)}
+.heroMeta{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;border-top:1px solid var(--line);margin-top:48px;padding-top:22px}
+.heroMeta small{display:block;color:var(--muted);font-size:9px;text-transform:uppercase;letter-spacing:.14em}
+.heroMeta strong{font-size:12px}
+.portrait{position:relative;max-width:450px;margin:auto;transition:transform .25s ease}
+.portrait:before{content:"";position:absolute;inset:15% -10% -5% 15%;background:linear-gradient(140deg,var(--accent),transparent);filter:blur(45px);opacity:.18}
+.portraitBox{position:relative;border-radius:220px 220px 42px 42px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);background:linear-gradient(150deg,#dfe4ec,#b7bec9);aspect-ratio:4/5}
+.portraitBox img{width:100%;height:100%;object-fit:cover}
+.float{position:absolute;background:rgba(255,255,255,.9);backdrop-filter:blur(15px);border:1px solid var(--line);border-radius:16px;padding:12px 14px;box-shadow:var(--shadow);font-size:11px}
+.float small{display:block;color:var(--muted);font-size:9px}
+.f1{left:-30px;top:18%}
+.f2{right:-25px;bottom:12%}
+.soft{background:var(--soft)}
+.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px}
+.section h2{font-size:clamp(42px,5vw,70px)}
+.aboutText{border-left:1px solid var(--line);padding-left:34px;color:var(--muted)}
+.aboutText .big{font-size:clamp(21px,2vw,29px);line-height:1.35;color:var(--text);letter-spacing:-.025em}
+.headingRow{display:flex;align-items:end;justify-content:space-between;gap:30px}
+.controls{display:flex;gap:8px}
+.round{width:48px;height:48px;border-radius:50%;border:1px solid var(--line);background:transparent;cursor:pointer}
+.round:hover{background:var(--text);color:var(--bg)}
+.journey{margin-top:54px;display:grid;grid-auto-flow:column;grid-auto-columns:minmax(340px,43%);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:3px 1px 14px}
+.journey::-webkit-scrollbar{display:none}
+.jcard{scroll-snap-align:start;min-height:390px;border:1px solid var(--line);border-radius:var(--r);padding:26px;background:rgba(255,255,255,.45);position:relative;transition:.3s}
+.jcard.active{background:#fff;border-color:rgba(36,88,244,.4);transform:translateY(-3px)}
+.num{font-size:58px;font-weight:800;color:rgba(20,24,30,.1);line-height:1}
+.jc{position:absolute;left:26px;right:26px;bottom:28px}
+.jc small{color:var(--accent);font-weight:800;letter-spacing:.14em}
+.jc h3{font-size:28px;letter-spacing:-.04em;margin:8px 0 12px}
+.jc p{color:var(--muted);font-size:13px}
+.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:18px}
+.tags span{border:1px solid var(--line);border-radius:999px;padding:5px 8px;font-size:9px;color:var(--muted)}
+.dark{background:radial-gradient(circle at 15% 0%,rgba(60,91,190,.26),transparent 35%),linear-gradient(#0b1020,#090d17);color:#f6f7fa}
+.dark .eyebrow{color:#89a6ff}
+.dark h2 span{color:#8f96a7}
+.project{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center;margin-top:56px}
+.mock{border:1px solid rgba(255,255,255,.12);border-radius:24px;overflow:hidden;background:#12192a;box-shadow:0 35px 100px rgba(0,0,0,.35)}
+.bar{height:52px;border-bottom:1px solid rgba(255,255,255,.08);display:flex;align-items:center;gap:8px;padding:0 16px}
+.bar i{width:8px;height:8px;border-radius:50%;background:#5c6473}
+.screen{min-height:360px;padding:34px}
+.screen small{color:#77839a}
+.screen h4{font-size:26px;margin:7px 0 28px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.stats div{background:#182135;border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:16px}
+.stats b{display:block;margin-top:5px}
+.chart{height:150px;margin-top:18px;display:flex;align-items:end;gap:10px;padding:18px;background:#101727;border-radius:14px}
+.chart span{flex:1;border-radius:7px 7px 2px 2px;background:linear-gradient(#7798ff,#3159db)}
+.projectCopy h3{font-size:clamp(34px,4vw,50px);line-height:1.04;letter-spacing:-.05em;margin:15px 0}
+.projectCopy p{color:#aab2c2}
+.projectCopy .tags span{border-color:rgba(255,255,255,.15);color:#b9c1d0}
+.projectFoot{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-top:30px}
+.lightbtn{background:#f7f8fb;color:#111827;border:0}
+.dark .round{border-color:rgba(255,255,255,.16);color:#fff}
+.dark .round:hover{background:#fff;color:#111}
+.steps{display:grid;grid-template-columns:.85fr 1.15fr;gap:80px}
+.stepList{border-top:1px solid var(--line)}
+.step{display:grid;grid-template-columns:45px 145px 1fr;gap:14px;padding:22px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.step small{color:var(--accent);font-weight:800}
+.step h3{margin:0}
+.step p{margin:0;color:var(--muted);font-size:13px}
+.skills{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line);margin-top:48px}
+.skill{min-height:235px;padding:28px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.skill em{font-style:normal;width:34px;height:34px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;color:var(--muted);font-size:10px}
+.skill h3{margin:42px 0 8px;font-size:22px}
+.skill p{color:var(--muted)}
+.contact{border:1px solid var(--line);border-radius:var(--r);padding:42px;background:rgba(255,255,255,.4);display:grid;grid-template-columns:1fr auto;gap:40px;align-items:end}
+.contact p{color:var(--muted);max-width:650px}
+footer{padding:28px 0 40px;border-top:1px solid var(--line);color:var(--muted);font-size:11px}
+.foot{display:flex;justify-content:space-between;gap:20px}
+.reveal{opacity:0;transform:translateY(20px);transition:.65s cubic-bezier(.2,.7,.2,1)}
+.reveal.show{opacity:1;transform:none}
+dialog{width:min(820px,calc(100% - 28px));border:0;border-radius:26px;padding:0;background:#fff;color:#14161c;box-shadow:0 40px 120px rgba(0,0,0,.35)}
+dialog::backdrop{background:rgba(4,7,14,.75);backdrop-filter:blur(10px)}
+.modal{padding:40px;position:relative}
+.close{position:absolute;right:16px;top:16px;width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:transparent}
+.modal h2{font-size:44px}
+.modalGrid{display:grid;grid-template-columns:repeat(2,1fr);margin-top:25px;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.modalGrid div{padding:20px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.modalGrid small{color:var(--accent);font-weight:800}
+.modalGrid p{color:var(--muted);font-size:13px}
+@media(max-width:900px){.heroGrid,.about,.project,.steps{grid-template-columns:1fr}.hero{padding:55px 0 85px;min-height:auto}.portrait{max-width:380px}.heroCopy{order:2}.aboutText{border-left:0;border-top:1px solid var(--line);padding:25px 0 0}.journey{grid-auto-columns:72%}.project,.steps{gap:45px}.contact{grid-template-columns:1fr}}
+@media(max-width:700px){.wrap{width:min(100% - 26px,1160px)}.section{padding:78px 0}.navlinks{position:absolute;top:70px;left:13px;right:13px;display:grid;gap:0;background:#fff;border:1px solid var(--line);border-radius:18px;padding:8px;box-shadow:var(--shadow);opacity:0;pointer-events:none;transform:translateY(-8px);transition:.2s}.navlinks.open{opacity:1;pointer-events:auto;transform:none}.navlinks a{padding:12px}.menu{display:block}.hero h1{font-size:clamp(46px,14vw,66px)}.heroMeta{grid-template-columns:1fr}.float{font-size:10px}.f1{left:-5px}.f2{right:-5px}.headingRow{align-items:flex-start;flex-direction:column}.journey{grid-auto-columns:88%}.project{margin-top:40px}.screen{padding:22px 16px;min-height:320px}.stats{grid-template-columns:1fr}.chart{height:105px}.projectFoot{align-items:stretch;flex-direction:column}.projectFoot .controls{justify-content:flex-end}.step{grid-template-columns:36px 1fr}.step p{grid-column:2}.skills{grid-template-columns:1fr}.contact{padding:28px 20px}.modal{padding:34px 20px}.modalGrid{grid-template-columns:1fr}.foot{flex-direction:column}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}.reveal{opacity:1;transform:none}}
+</style>
 </head>
 <body>
-  <div class="noise" aria-hidden="true"></div>
-  <div class="progress" id="progressBar" aria-hidden="true"></div>
+<header>
+<nav class="wrap">
+<a class="brand" href="#home"><span class="mark">RY</span>Raehan Yanuar</a>
+<div class="navlinks" id="navlinks">
+<a href="#about">Tentang</a><a href="#journey">Journey</a><a href="#projects">Project</a><a href="#skills">Skills</a><a href="#contact">Kontak</a>
+</div>
+<button class="menu" id="menu" aria-label="Buka menu">☰</button>
+</nav>
+</header>
 
-  <header class="site-header" id="top">
-    <nav class="nav container" aria-label="Navigasi utama">
-      <a class="brand" href="#home" aria-label="Kembali ke beranda">
-        <span class="brand-mark">RY</span>
-        <span class="brand-text">Raehan Yanuar</span>
-      </a>
+<main>
+<section class="hero" id="home">
+<div class="wrap heroGrid">
+<div class="heroCopy reveal">
+<p class="eyebrow">TRAINER / QC SDM · PROCESS IMPROVEMENT</p>
+<h1>Saya bekerja dengan manusia, <span>proses, dan sistem.</span></h1>
+<p class="lead">Berawal dari operasional di lingkungan <b>Call Center - Command Center</b>, berkembang melalui tanggung jawab BL, memperoleh penghargaan <b>Best Operator Excellent</b>, kemudian dipercaya menjalankan fungsi Trainer / QC SDM dan mengembangkan improvement digital untuk mendukung pekerjaan sehari-hari.</p>
+<div class="actions"><a class="btn primary" href="#journey">Lihat perjalanan ↘</a><a class="btn" href="#projects">Lihat project</a></div>
+<div class="heroMeta">
+<div><small>Fokus</small><strong>People Development</strong></div>
+<div><small>Pendekatan</small><strong>Process Improvement</strong></div>
+<div><small>Teknologi</small><strong>Digital Workflow</strong></div>
+</div>
+</div>
+<div class="portrait reveal">
+<div class="portraitBox"><img src="data:image/webp;base64,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" alt="Raehan Yanuar"></div>
+<div class="float f1"><small>Current focus</small><b>Trainer / QC SDM</b></div>
+<div class="float f2"><small>Beyond the role</small><b>Building better workflows</b></div>
+</div>
+</div>
+</section>
 
-      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Buka navigasi">
-        <span></span><span></span>
-      </button>
+<section class="section soft" id="about">
+<div class="wrap about">
+<div class="reveal"><p class="eyebrow">01 · TENTANG SAYA</p><h2>Bukan pindah profesi. <span>Memperluas cara kerja.</span></h2></div>
+<div class="aboutText reveal">
+<p class="big">Saya tidak memulai perjalanan sebagai developer. Saya memulai dari sisi operasional, memahami alur kerja dari dalam, lalu perlahan dipercaya menangani tanggung jawab yang lebih besar.</p>
+<p>Ketika menghadapi proses berulang, pelaporan yang tersebar, dan kebutuhan evaluasi yang semakin kompleks, saya mulai memakai teknologi untuk membuat pekerjaan lebih terstruktur, mudah dipantau, dan efisien.</p>
+<p>Identitas profesional saya tetap <b>Trainer / QC SDM</b>, dengan kekuatan tambahan pada <b>process improvement</b>, workflow design, dan internal system development.</p>
+</div>
+</div>
+</section>
 
-      <div class="nav-links" id="navLinks">
-        <a href="#about">Tentang</a>
-        <a href="#journey">Journey</a>
-        <a href="#projects">Project</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Kontak</a>
-      </div>
+<section class="section" id="journey">
+<div class="wrap">
+<div class="headingRow reveal">
+<div><p class="eyebrow">02 · MY JOURNEY</p><h2>Dari operator sampai <span>membangun sistem.</span></h2></div>
+<div class="controls"><button class="round" id="prevJ">←</button><button class="round" id="nextJ">→</button></div>
+</div>
+<div class="journey reveal" id="journeyTrack">
+<article class="jcard active"><div class="num">01</div><div class="jc"><small>THE BEGINNING</small><h3>Operator</h3><p>Memulai dari lingkungan operasional Call Center - Command Center. Fase ini membentuk pemahaman tentang monitoring, komunikasi, disiplin kerja, ketelitian, dan ritme operasional.</p><div class="tags"><span>Operations</span><span>Monitoring</span><span>Discipline</span></div></div></article>
+<article class="jcard"><div class="num">02</div><div class="jc"><small>GREATER RESPONSIBILITY</small><h3>BL Role</h3><p>Mendapat tanggung jawab lebih luas, mulai membantu kontrol, koordinasi, dan konsistensi proses kerja tim.</p><div class="tags"><span>Coordination</span><span>Control</span><span>Ownership</span></div></div></article>
+<article class="jcard"><div class="num">03</div><div class="jc"><small>RECOGNITION</small><h3>Best Operator Excellent</h3><p>Kinerja operasional mendapatkan pengakuan melalui penghargaan Best Operator Excellent dan menjadi milestone penting dalam perjalanan profesional.</p><div class="tags"><span>Performance</span><span>Consistency</span><span>Recognition</span></div></div></article>
+<article class="jcard"><div class="num">04</div><div class="jc"><small>PEOPLE DEVELOPMENT</small><h3>Ditunjuk sebagai Trainer</h3><p>Mulai mendampingi proses belajar, evaluasi, coaching, dan pengembangan operator. Pengalaman operasional berubah menjadi pengetahuan yang harus bisa ditransfer dan dievaluasi.</p><div class="tags"><span>Training</span><span>Evaluation</span><span>Coaching</span></div></div></article>
+<article class="jcard"><div class="num">05</div><div class="jc"><small>PROCESS IMPROVEMENT</small><h3>Digital Experimentation</h3><p>Mulai membenahi proses dengan spreadsheet, automation, Apps Script, dan workflow digital untuk evaluasi, reporting, training, dan monitoring.</p><div class="tags"><span>Spreadsheet</span><span>Automation</span><span>Workflow</span></div></div></article>
+<article class="jcard"><div class="num">06</div><div class="jc"><small>INTERNAL SYSTEM</small><h3>PRISMA</h3><p>Eksperimen berkembang menjadi sistem internal untuk membantu monitoring, evaluasi, OJT, reporting, role-based workflow, dan pengembangan SDM.</p><div class="tags"><span>System Design</span><span>Reporting</span><span>Workforce</span></div></div></article>
+</div>
+</div>
+</section>
 
-      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Ganti tema">
-        <span class="theme-icon" aria-hidden="true">◐</span>
-      </button>
-    </nav>
-  </header>
+<section class="section dark" id="projects">
+<div class="wrap">
+<div class="headingRow reveal">
+<div><p class="eyebrow">03 · SELECTED PROJECTS</p><h2>Improvement yang lahir dari <span>pekerjaan nyata.</span></h2></div>
+<p class="muted" style="max-width:360px">Teknologi saya tempatkan sebagai alat kerja, bukan sebagai pengganti identitas profesi.</p>
+</div>
+<div class="project reveal">
+<div class="mock">
+<div class="bar"><i></i><i></i><i></i></div>
+<div class="screen">
+<small>WORKFORCE OVERVIEW</small><h4>Performance & Development</h4>
+<div class="stats"><div><small>Monitoring</small><b>Live</b></div><div><small>Workflow</small><b>Structured</b></div><div><small>Reporting</small><b>Integrated</b></div></div>
+<div class="chart"><span style="height:38%"></span><span style="height:62%"></span><span style="height:48%"></span><span style="height:76%"></span><span style="height:56%"></span><span style="height:88%"></span></div>
+</div>
+</div>
+<div class="projectCopy">
+<small id="pnum">01 / 03</small>
+<h3 id="ptitle">PRISMA — Internal Workforce Monitoring System</h3>
+<p id="ptext">Sistem internal yang mengintegrasikan monitoring performa, training, OJT, evaluasi, reporting, dan workflow lintas peran.</p>
+<div class="tags" id="ptags"><span>Workflow Design</span><span>Database</span><span>Reporting</span></div>
+<div class="projectFoot"><button class="btn lightbtn" id="detail">Lihat detail</button><div class="controls"><button class="round" id="prevP">←</button><button class="round" id="nextP">→</button></div></div>
+</div>
+</div>
+</div>
+</section>
 
-  <main>
-    <section class="hero section" id="home">
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">TRAINER / QC SDM · PROCESS IMPROVEMENT</p>
-          <h1>
-            Saya bekerja dengan manusia,
-            <span>proses, dan sistem.</span>
-          </h1>
-          <p class="hero-text">
-            Berawal dari operasional di lingkungan Call Center - Command Center,
-            berkembang melalui tanggung jawab BL, memperoleh penghargaan
-            <strong>Best Operator Excellent</strong>, kemudian dipercaya menjalankan
-            fungsi Trainer / QC SDM dan mengembangkan improvement digital untuk
-            mendukung pekerjaan sehari-hari.
-          </p>
+<section class="section">
+<div class="wrap steps">
+<div class="reveal"><p class="eyebrow">04 · HOW I WORK</p><h2>Masalah tidak selalu butuh <span>software besar.</span></h2><p class="muted">Saya mencari titik friksi dalam proses lebih dulu. Teknologi dipakai ketika memang membuat alur kerja lebih jelas.</p></div>
+<div class="stepList">
+<div class="step reveal"><small>01</small><h3>Observe</h3><p>Memahami proses dari sisi orang yang benar-benar menjalankannya.</p></div>
+<div class="step reveal"><small>02</small><h3>Structure</h3><p>Memetakan kebutuhan, alur, tanggung jawab, dan titik keputusan.</p></div>
+<div class="step reveal"><small>03</small><h3>Improve</h3><p>Menyederhanakan proses dan mengurangi pekerjaan berulang.</p></div>
+<div class="step reveal"><small>04</small><h3>Build</h3><p>Menerjemahkan improvement menjadi tools, automation, atau sistem internal.</p></div>
+</div>
+</div>
+</section>
 
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#journey">Lihat perjalanan <span>↘</span></a>
-            <a class="btn btn-ghost" href="#projects">Lihat project</a>
-          </div>
+<section class="section soft" id="skills">
+<div class="wrap">
+<div class="reveal"><p class="eyebrow">05 · CAPABILITIES</p><h2>Keahlian yang tumbuh <span>dari kebutuhan kerja.</span></h2></div>
+<div class="skills">
+<article class="skill reveal"><em>A</em><h3>Training & QC SDM</h3><p>Training, coaching, evaluasi, OJT, monitoring perkembangan, dan quality control.</p></article>
+<article class="skill reveal"><em>B</em><h3>Process Improvement</h3><p>Problem mapping, workflow design, simplifikasi proses, dan reporting.</p></article>
+<article class="skill reveal"><em>C</em><h3>Digital Workflow</h3><p>Spreadsheet systems, Apps Script, automation, data flow, dan digital forms.</p></article>
+<article class="skill reveal"><em>D</em><h3>Internal System Development</h3><p>UI workflow, role-based access, database logic, reporting, dan iteration.</p></article>
+</div>
+</div>
+</section>
 
-          <div class="hero-meta">
-            <div>
-              <span class="meta-label">Fokus</span>
-              <strong>People Development</strong>
-            </div>
-            <div>
-              <span class="meta-label">Pendekatan</span>
-              <strong>Process Improvement</strong>
-            </div>
-            <div>
-              <span class="meta-label">Teknologi</span>
-              <strong>Digital Workflow</strong>
-            </div>
-          </div>
-        </div>
+<section class="section" id="contact">
+<div class="wrap contact reveal">
+<div><p class="eyebrow">06 · CONTACT</p><h2>Kerja utama saya tetap tentang <span>manusia dan proses.</span></h2><p>Teknologi adalah salah satu alat yang saya gunakan untuk membuat keduanya bekerja lebih baik.</p></div>
+<div class="actions"><a class="btn primary" href="https://github.com/Raehanyanuar28" target="_blank" rel="noopener">GitHub</a></div>
+</div>
+</section>
+</main>
 
-        <div class="hero-visual reveal">
-          <div class="portrait-wrap">
-            <div class="portrait-frame">
-              <img src="assets/profile.png" alt="Potret profesional Raehan Yanuar" />
-            </div>
+<footer><div class="wrap foot"><span>© <span id="year"></span> Raehan Yanuar</span><a href="#home">Back to top ↑</a></div></footer>
 
-            <div class="floating-card card-one">
-              <span class="dot"></span>
-              <div>
-                <small>Current focus</small>
-                <strong>Trainer / QC SDM</strong>
-              </div>
-            </div>
+<dialog id="modal">
+<div class="modal">
+<button class="close" id="close">×</button>
+<p class="eyebrow">CASE STUDY</p>
+<h2 id="mtitle"></h2>
+<p class="muted" id="mintro"></p>
+<div class="modalGrid">
+<div><small>Problem</small><p id="mproblem"></p></div>
+<div><small>Approach</small><p id="mapproach"></p></div>
+<div><small>My Contribution</small><p id="mcontrib"></p></div>
+<div><small>Outcome</small><p id="moutcome"></p></div>
+</div>
+</div>
+</dialog>
 
-            <div class="floating-card card-two">
-              <small>Beyond the role</small>
-              <strong>Building better workflows</strong>
-            </div>
-          </div>
-        </div>
-      </div>
+<script>
+const q=s=>document.querySelector(s),qa=s=>[...document.querySelectorAll(s)];
+q('#year').textContent=new Date().getFullYear();
+q('#menu').onclick=()=>q('#navlinks').classList.toggle('open');
+qa('#navlinks a').forEach(a=>a.onclick=()=>q('#navlinks').classList.remove('open'));
 
-      <a class="scroll-cue" href="#about" aria-label="Lanjut ke bagian Tentang">
-        <span>SCROLL</span>
-        <i></i>
-      </a>
-    </section>
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');obs.unobserve(e.target)}}),{threshold:.12});
+qa('.reveal').forEach(x=>obs.observe(x));
 
-    <section class="section section-soft" id="about">
-      <div class="container about-grid">
-        <div class="section-heading reveal">
-          <p class="eyebrow">01 · TENTANG SAYA</p>
-          <h2>Bukan pindah profesi. <span>Memperluas cara kerja.</span></h2>
-        </div>
+const jt=q('#journeyTrack'),cards=qa('.jcard');let ji=0;
+function goJ(n){ji=Math.max(0,Math.min(n,cards.length-1));cards.forEach((c,i)=>c.classList.toggle('active',i===ji));cards[ji].scrollIntoView({behavior:'smooth',inline:'start',block:'nearest'})}
+q('#prevJ').onclick=()=>goJ(ji-1);
+q('#nextJ').onclick=()=>goJ(ji+1);
 
-        <div class="about-content reveal">
-          <p class="lead">
-            Saya tidak memulai perjalanan sebagai developer. Saya memulai dari sisi
-            operasional, memahami alur kerja dari dalam, lalu perlahan dipercaya
-            menangani tanggung jawab yang lebih besar.
-          </p>
-          <p>
-            Ketika menghadapi proses yang berulang, pelaporan yang tersebar, dan
-            kebutuhan evaluasi yang semakin kompleks, saya mulai menggunakan teknologi
-            sebagai alat untuk membuat pekerjaan lebih terstruktur, lebih mudah dipantau,
-            dan lebih efisien.
-          </p>
-          <p>
-            Karena itu, identitas profesional saya tetap berada pada
-            <strong>Trainer / QC SDM</strong>, dengan kekuatan tambahan pada
-            <strong>process improvement</strong>, perancangan workflow, dan pengembangan
-            sistem internal.
-          </p>
-        </div>
-      </div>
-    </section>
+let st;
+jt.onscroll=()=>{clearTimeout(st);st=setTimeout(()=>{let r=jt.getBoundingClientRect(),best=0,d=1e9;cards.forEach((c,i)=>{let x=Math.abs(c.getBoundingClientRect().left-r.left);if(x<d){d=x;best=i}});ji=best;cards.forEach((c,i)=>c.classList.toggle('active',i===ji))},80)};
 
-    <section class="section" id="journey">
-      <div class="container">
-        <div class="section-heading row reveal">
-          <div>
-            <p class="eyebrow">02 · MY JOURNEY</p>
-            <h2>Dari operator sampai <span>membangun sistem.</span></h2>
-          </div>
-          <div class="slider-controls">
-            <button class="icon-btn" id="journeyPrev" type="button" aria-label="Journey sebelumnya">←</button>
-            <button class="icon-btn" id="journeyNext" type="button" aria-label="Journey berikutnya">→</button>
-          </div>
-        </div>
+const projects=[
+{t:'PRISMA — Internal Workforce Monitoring System',x:'Sistem internal yang mengintegrasikan monitoring performa, training, OJT, evaluasi, reporting, dan workflow lintas peran.',tags:['Workflow Design','Database','Reporting'],intro:'Project lahir dari kebutuhan kerja nyata, bukan brief latihan pemrograman.',problem:'Data evaluasi, training, monitoring, dan reporting tersebar dan membutuhkan pekerjaan administratif berulang.',approach:'Memetakan proses, role, hak akses, alur data, lalu mengembangkan workflow digital secara bertahap.',contrib:'Inisiasi kebutuhan, process mapping, system design, UI flow, implementasi, testing, dan improvement.',out:'Satu workspace internal yang membantu monitoring, evaluasi, OJT, reporting, dan pengembangan SDM lebih terstruktur.'},
+{t:'Digital Assessment & Training Workflow',x:'Penyederhanaan penilaian, matrix kompetensi, screening, OJT, dan dokumentasi training.',tags:['Google Sheets','Apps Script','Assessment'],intro:'Improvement dimulai dari tools yang paling dekat dengan pekerjaan sehari-hari.',problem:'Data perkembangan peserta perlu dipantau konsisten, sementara pencatatan manual mudah tersebar.',approach:'Menyusun form, matrix, rekap, dan automation sederhana untuk mengurangi pekerjaan ulang.',contrib:'Perancangan struktur penilaian, kebutuhan trainer, formula, automation, dan reporting.',out:'Proses evaluasi dan dokumentasi training menjadi lebih konsisten dan mudah direkap.'},
+{t:'Reporting & Operational Process Improvement',x:'Perbaikan reporting dengan fokus pada data yang mudah dibaca, periodisasi jelas, dan pengurangan kerja manual.',tags:['Reporting','Data Structure','Process Design'],intro:'Tidak semua improvement membutuhkan aplikasi baru.',problem:'Laporan periodik memakan waktu dan informasi penting dapat tersebar di beberapa sumber.',approach:'Menentukan kebutuhan informasi, standardisasi struktur, periodisasi, dan mekanisme rekap.',contrib:'Merancang format, struktur data, logika rekap, dan kebutuhan output.',out:'Pelaporan lebih mudah dibaca, lebih konsisten, dan lebih dekat dengan kebutuhan keputusan.'}
+];
 
-        <div class="journey-shell reveal">
-          <div class="journey-track" id="journeyTrack" tabindex="0" aria-label="Timeline perjalanan karier">
-            <article class="journey-card active" data-index="0">
-              <div class="journey-index">01</div>
-              <div class="journey-content">
-                <span class="journey-kicker">THE BEGINNING</span>
-                <h3>Operator</h3>
-                <p>
-                  Memulai dari lingkungan operasional Call Center - Command Center.
-                  Fase ini membentuk pemahaman langsung tentang monitoring, komunikasi,
-                  disiplin kerja, ketelitian, dan ritme operasional.
-                </p>
-                <div class="tag-row">
-                  <span>Operations</span><span>Monitoring</span><span>Discipline</span>
-                </div>
-              </div>
-              <div class="journey-line"></div>
-            </article>
+let pi=0;
+function renderP(){let p=projects[pi];q('#pnum').textContent=String(pi+1).padStart(2,'0')+' / 03';q('#ptitle').textContent=p.t;q('#ptext').textContent=p.x;q('#ptags').innerHTML=p.tags.map(t=>'<span>'+t+'</span>').join('')}
+q('#prevP').onclick=()=>{pi=(pi+2)%3;renderP()};
+q('#nextP').onclick=()=>{pi=(pi+1)%3;renderP()};
 
-            <article class="journey-card" data-index="1">
-              <div class="journey-index">02</div>
-              <div class="journey-content">
-                <span class="journey-kicker">GREATER RESPONSIBILITY</span>
-                <h3>BL Role</h3>
-                <p>
-                  Mendapat kepercayaan pada tanggung jawab yang lebih luas. Bukan lagi
-                  hanya menjalankan pekerjaan sendiri, tetapi mulai ikut membantu kontrol,
-                  koordinasi, dan konsistensi proses kerja tim.
-                </p>
-                <div class="tag-row">
-                  <span>Coordination</span><span>Control</span><span>Ownership</span>
-                </div>
-              </div>
-              <div class="journey-line"></div>
-            </article>
+q('#detail').onclick=()=>{let p=projects[pi];q('#mtitle').textContent=p.t;q('#mintro').textContent=p.intro;q('#mproblem').textContent=p.problem;q('#mapproach').textContent=p.approach;q('#mcontrib').textContent=p.contrib;q('#moutcome').textContent=p.out;q('#modal').showModal()};
+q('#close').onclick=()=>q('#modal').close();
+q('#modal').onclick=e=>{if(e.target===q('#modal'))q('#modal').close()};
 
-            <article class="journey-card" data-index="2">
-              <div class="journey-index">03</div>
-              <div class="journey-content">
-                <span class="journey-kicker">RECOGNITION</span>
-                <h3>Best Operator Excellent</h3>
-                <p>
-                  Kinerja operasional mendapatkan pengakuan melalui penghargaan
-                  <strong>Best Operator Excellent</strong>, menjadi milestone penting
-                  sebelum tanggung jawab berikutnya berkembang.
-                </p>
-                <div class="tag-row">
-                  <span>Performance</span><span>Consistency</span><span>Recognition</span>
-                </div>
-              </div>
-              <div class="journey-line"></div>
-            </article>
-
-            <article class="journey-card" data-index="3">
-              <div class="journey-index">04</div>
-              <div class="journey-content">
-                <span class="journey-kicker">PEOPLE DEVELOPMENT</span>
-                <h3>Ditunjuk sebagai Trainer</h3>
-                <p>
-                  Mulai mendampingi proses belajar, evaluasi, coaching, dan pengembangan
-                  operator. Di fase ini pengalaman operasional berubah menjadi pengetahuan
-                  yang harus bisa ditransfer dan dievaluasi secara sistematis.
-                </p>
-                <div class="tag-row">
-                  <span>Training</span><span>Evaluation</span><span>Coaching</span>
-                </div>
-              </div>
-              <div class="journey-line"></div>
-            </article>
-
-            <article class="journey-card" data-index="4">
-              <div class="journey-index">05</div>
-              <div class="journey-content">
-                <span class="journey-kicker">PROCESS IMPROVEMENT</span>
-                <h3>Digital Experimentation</h3>
-                <p>
-                  Mulai membenahi proses menggunakan spreadsheet, automation, Apps Script,
-                  dan workflow digital untuk evaluasi, reporting, training, serta monitoring.
-                </p>
-                <div class="tag-row">
-                  <span>Spreadsheet</span><span>Automation</span><span>Workflow</span>
-                </div>
-              </div>
-              <div class="journey-line"></div>
-            </article>
-
-            <article class="journey-card" data-index="5">
-              <div class="journey-index">06</div>
-              <div class="journey-content">
-                <span class="journey-kicker">INTERNAL SYSTEM</span>
-                <h3>PRISMA</h3>
-                <p>
-                  Eksperimen berkembang menjadi sistem internal untuk membantu monitoring,
-                  evaluasi, OJT, reporting, role-based workflow, dan pengembangan SDM secara
-                  lebih terstruktur.
-                </p>
-                <div class="tag-row">
-                  <span>System Design</span><span>Reporting</span><span>Workforce</span>
-                </div>
-              </div>
-              <div class="journey-line"></div>
-            </article>
-          </div>
-
-          <div class="journey-pagination" id="journeyPagination" aria-label="Pilih tahap perjalanan"></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-dark" id="projects">
-      <div class="container">
-        <div class="section-heading light row reveal">
-          <div>
-            <p class="eyebrow">03 · SELECTED PROJECTS</p>
-            <h2>Improvement yang lahir dari <span>pekerjaan nyata.</span></h2>
-          </div>
-          <p class="section-sidecopy">
-            Project di sini bukan untuk mengganti identitas profesi,
-            tetapi menunjukkan bagaimana teknologi saya pakai sebagai alat kerja.
-          </p>
-        </div>
-
-        <div class="project-stage reveal">
-          <div class="project-visual" id="projectVisual">
-            <div class="mock-window">
-              <div class="mock-top">
-                <span></span><span></span><span></span>
-                <div class="mock-address">internal-workflow.local</div>
-              </div>
-              <div class="mock-body">
-                <aside class="mock-sidebar">
-                  <b>PRISMA</b>
-                  <i class="active"></i><i></i><i></i><i></i><i></i>
-                </aside>
-                <div class="mock-main">
-                  <div class="mock-header">
-                    <div>
-                      <small>WORKFORCE OVERVIEW</small>
-                      <h4>Performance & Development</h4>
-                    </div>
-                    <span class="mock-pill">Internal</span>
-                  </div>
-                  <div class="mock-stats">
-                    <div><small>Monitoring</small><strong>Live</strong></div>
-                    <div><small>Workflow</small><strong>Structured</strong></div>
-                    <div><small>Reporting</small><strong>Integrated</strong></div>
-                  </div>
-                  <div class="mock-chart">
-                    <span style="height:38%"></span>
-                    <span style="height:62%"></span>
-                    <span style="height:48%"></span>
-                    <span style="height:76%"></span>
-                    <span style="height:56%"></span>
-                    <span style="height:88%"></span>
-                    <span style="height:70%"></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-copy">
-            <span class="project-number" id="projectNumber">01 / 03</span>
-            <h3 id="projectTitle">PRISMA — Internal Workforce Monitoring System</h3>
-            <p id="projectText">
-              Sistem internal yang mengintegrasikan kebutuhan monitoring performa,
-              training, OJT, evaluasi, reporting, dan alur kerja lintas peran.
-            </p>
-            <div class="project-tags" id="projectTags">
-              <span>Workflow Design</span>
-              <span>Cloudflare Worker</span>
-              <span>Database</span>
-              <span>Reporting</span>
-            </div>
-
-            <div class="project-actions">
-              <button class="btn btn-light" id="projectDetailBtn" type="button">Lihat detail</button>
-              <div class="slider-controls">
-                <button class="icon-btn light" id="projectPrev" type="button" aria-label="Project sebelumnya">←</button>
-                <button class="icon-btn light" id="projectNext" type="button" aria-label="Project berikutnya">→</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="impact">
-      <div class="container impact-grid">
-        <div class="section-heading reveal">
-          <p class="eyebrow">04 · HOW I WORK</p>
-          <h2>Masalah tidak selalu butuh <span>software besar.</span></h2>
-          <p>
-            Yang saya cari lebih dulu adalah titik friksi dalam proses. Teknologi baru
-            dipakai ketika memang membantu alur kerja menjadi lebih jelas.
-          </p>
-        </div>
-
-        <div class="impact-steps">
-          <article class="impact-step reveal">
-            <span>01</span>
-            <h3>Observe</h3>
-            <p>Memahami proses dari sisi orang yang benar-benar menjalankannya.</p>
-          </article>
-          <article class="impact-step reveal">
-            <span>02</span>
-            <h3>Structure</h3>
-            <p>Memetakan kebutuhan, alur, tanggung jawab, dan titik keputusan.</p>
-          </article>
-          <article class="impact-step reveal">
-            <span>03</span>
-            <h3>Improve</h3>
-            <p>Menyederhanakan proses dan mengurangi pekerjaan berulang yang tidak perlu.</p>
-          </article>
-          <article class="impact-step reveal">
-            <span>04</span>
-            <h3>Build</h3>
-            <p>Menerjemahkan improvement menjadi tools, automation, atau sistem internal.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-soft" id="skills">
-      <div class="container">
-        <div class="section-heading row reveal">
-          <div>
-            <p class="eyebrow">05 · CAPABILITIES</p>
-            <h2>Keahlian yang tumbuh <span>dari kebutuhan kerja.</span></h2>
-          </div>
-        </div>
-
-        <div class="skills-grid">
-          <article class="skill-card reveal">
-            <span class="skill-no">A</span>
-            <h3>Training & QC SDM</h3>
-            <p>Training, coaching, evaluasi, OJT, monitoring perkembangan, dan quality control.</p>
-          </article>
-          <article class="skill-card reveal">
-            <span class="skill-no">B</span>
-            <h3>Process Improvement</h3>
-            <p>Problem mapping, workflow design, simplifikasi proses, dan struktur reporting.</p>
-          </article>
-          <article class="skill-card reveal">
-            <span class="skill-no">C</span>
-            <h3>Digital Workflow</h3>
-            <p>Spreadsheet systems, Apps Script, automation, data flow, dan digital forms.</p>
-          </article>
-          <article class="skill-card reveal">
-            <span class="skill-no">D</span>
-            <h3>Internal System Development</h3>
-            <p>UI workflow, role-based access, database logic, reporting, dan system iteration.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section contact" id="contact">
-      <div class="container contact-card reveal">
-        <div>
-          <p class="eyebrow">06 · CONTACT</p>
-          <h2>Kerja utama saya tetap tentang <span>manusia dan proses.</span></h2>
-          <p>
-            Teknologi adalah salah satu alat yang saya gunakan untuk membuat keduanya
-            bekerja lebih baik.
-          </p>
-        </div>
-
-        <div class="contact-actions">
-          <a class="btn btn-primary" href="mailto:EMAIL_KAMU">Email</a>
-          <a class="btn btn-ghost" href="LINK_LINKEDIN" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a class="btn btn-ghost" href="https://github.com/Raehanyanuar28" target="_blank" rel="noopener noreferrer">GitHub</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-inner">
-      <span>© <span id="year"></span> Raehan Yanuar</span>
-      <a href="#top">Back to top ↑</a>
-    </div>
-  </footer>
-
-  <dialog class="project-modal" id="projectModal" aria-labelledby="modalTitle">
-    <div class="modal-shell">
-      <button class="modal-close" id="modalClose" type="button" aria-label="Tutup detail project">×</button>
-      <span class="modal-kicker" id="modalKicker">CASE STUDY</span>
-      <h2 id="modalTitle">Project</h2>
-      <p id="modalIntro"></p>
-
-      <div class="modal-grid">
-        <div>
-          <small>Problem</small>
-          <p id="modalProblem"></p>
-        </div>
-        <div>
-          <small>Approach</small>
-          <p id="modalApproach"></p>
-        </div>
-        <div>
-          <small>My Contribution</small>
-          <p id="modalContribution"></p>
-        </div>
-        <div>
-          <small>Outcome</small>
-          <p id="modalOutcome"></p>
-        </div>
-      </div>
-    </div>
-  </dialog>
-
-  <script src="script.js"></script>
+const portrait=q('.portrait');
+if(matchMedia('(hover:hover) and (pointer:fine)').matches){
+portrait.addEventListener('pointermove',e=>{const r=portrait.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;portrait.style.transform=`perspective(900px) rotateY(${x*3}deg) rotateX(${-y*3}deg)`});
+portrait.addEventListener('pointerleave',()=>portrait.style.transform='');
+}
+</script>
 </body>
 </html>
