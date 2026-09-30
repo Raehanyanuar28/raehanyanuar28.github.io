@@ -223,6 +223,97 @@ dialog::backdrop{background:rgba(5,7,12,.78);backdrop-filter:blur(10px)}
 .modal-grid small{color:var(--blue);font-size:9px;font-weight:800;letter-spacing:.12em}
 .modal-grid p{margin:8px 0 0;color:var(--muted);font-size:12px}
 
+
+/* ===== PRISMA INTERACTIVE PORTFOLIO DEMO ===== */
+.pf-actions{display:flex;gap:9px;flex-wrap:wrap;justify-content:flex-end}
+.demo-trigger{background:#fff!important;color:var(--ink)!important;border-color:#fff!important}
+.demo-trigger:hover{background:#dfe5ff!important}
+.demo-dialog{
+  width:min(1240px,calc(100% - 20px));height:min(820px,calc(100svh - 20px));
+  max-width:none;max-height:none;border:0;border-radius:30px;padding:0;overflow:hidden;
+  background:#0c111b;color:#eaf0f6;box-shadow:0 50px 160px rgba(0,0,0,.55)
+}
+.demo-dialog::backdrop{background:rgba(4,7,12,.86);backdrop-filter:blur(13px)}
+.demo-shell{height:100%;display:grid;grid-template-columns:235px 1fr;background:#0c111b}
+.demo-side{padding:24px 16px;border-right:1px solid rgba(255,255,255,.08);display:flex;flex-direction:column;min-height:0;background:#0a0f18}
+.demo-brand{display:flex;align-items:center;gap:11px;padding:0 8px 24px}
+.demo-brandmark{width:38px;height:38px;border-radius:12px;background:linear-gradient(145deg,#4b68ff,#80a0ff);display:grid;place-items:center;font-size:11px;font-weight:900;color:white;box-shadow:0 10px 30px rgba(75,104,255,.25)}
+.demo-brand strong{display:block;font-size:13px}.demo-brand small{display:block;color:#758199;font-size:9px;margin-top:1px}
+.demo-rolelabel,.demo-navlabel{font-size:8px;font-weight:900;letter-spacing:.17em;color:#59667c;text-transform:uppercase;padding:0 10px;margin:6px 0 8px}
+.demo-roles{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:0 4px 18px}
+.demo-role{border:1px solid rgba(255,255,255,.08);background:#101827;color:#7f8ba0;border-radius:10px;padding:9px 5px;font-size:9px;font-weight:800;cursor:pointer}
+.demo-role.active{background:#e8edff;color:#18213a;border-color:#e8edff}
+.demo-nav{display:grid;gap:4px;overflow:auto}
+.demo-nav button{border:0;background:transparent;color:#8b98ac;text-align:left;padding:11px 12px;border-radius:11px;font-size:11px;cursor:pointer;display:flex;gap:9px;align-items:center}
+.demo-nav button:hover,.demo-nav button.active{background:#141e2f;color:#fff}
+.demo-nav button i{font-style:normal;width:18px;text-align:center;color:#7087ff}
+.demo-disclaimer{margin-top:auto;padding:14px 10px 2px;color:#59667c;font-size:8px;line-height:1.5}
+.demo-main{min-width:0;display:grid;grid-template-rows:auto 1fr;position:relative}
+.demo-top{height:78px;border-bottom:1px solid rgba(255,255,255,.08);display:flex;align-items:center;padding:0 26px;gap:14px;background:rgba(12,17,27,.93)}
+.demo-topcopy{min-width:0}.demo-topcopy small{display:block;color:#65738b;font-size:8px;letter-spacing:.13em;text-transform:uppercase}.demo-topcopy strong{font-size:15px}
+.demo-topactions{margin-left:auto;display:flex;gap:8px}
+.demo-icon{height:40px;min-width:40px;padding:0 13px;border:1px solid rgba(255,255,255,.1);background:#111a29;color:#b7c2d3;border-radius:12px;cursor:pointer;font-size:11px}
+.demo-icon:hover{background:#19243a;color:white}
+.demo-close{font-size:20px;line-height:1}
+.demo-stage{overflow:auto;padding:24px;background:radial-gradient(circle at 90% 0%,rgba(53,88,255,.12),transparent 29%),#0c111b}
+.demo-view{display:none}.demo-view.active{display:block;animation:demoFade .28s ease}
+@keyframes demoFade{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
+.demo-head{display:flex;justify-content:space-between;align-items:end;gap:18px;margin-bottom:20px}
+.demo-eyebrow{font-size:8px;letter-spacing:.17em;color:#6f87ff;font-weight:900;text-transform:uppercase}
+.demo-head h3{font-family:Georgia,serif;font-size:32px;font-weight:500;margin:4px 0 0;letter-spacing:-.035em;color:#f5f7fb}
+.demo-head p{color:#718097;font-size:10px;max-width:520px;margin:0}
+.demo-badge{display:inline-flex;align-items:center;gap:6px;padding:7px 9px;border-radius:999px;font-size:8px;font-weight:800;border:1px solid rgba(255,255,255,.09);color:#9aa8bc}
+.demo-badge::before{content:"";width:5px;height:5px;border-radius:50%;background:#63dda9}
+.demo-grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:11px}
+.demo-kpi{padding:18px;border:1px solid rgba(255,255,255,.075);border-radius:17px;background:#111925;min-height:118px}
+.demo-kpi small{display:block;color:#64728a;font-size:8px;letter-spacing:.11em}.demo-kpi b{display:block;font-family:Georgia,serif;font-size:31px;font-weight:500;margin:8px 0;color:#f5f7fb}.demo-kpi span{font-size:9px;color:#748198}
+.demo-grid2{display:grid;grid-template-columns:1.1fr .9fr;gap:12px;margin-top:12px}
+.demo-card{border:1px solid rgba(255,255,255,.075);border-radius:18px;background:#111925;overflow:hidden}
+.demo-cardhead{padding:16px 17px;border-bottom:1px solid rgba(255,255,255,.07);display:flex;justify-content:space-between;gap:10px;align-items:center}
+.demo-cardhead strong{font-size:11px}.demo-cardhead span{font-size:8px;color:#69778d}
+.demo-cardbody{padding:16px}
+.demo-bars{height:180px;display:flex;align-items:end;gap:10px;padding:12px 0 24px}
+.demo-bar{flex:1;position:relative;background:linear-gradient(180deg,#7188ff,#3558ff);border-radius:7px 7px 2px 2px;min-height:12px}
+.demo-bar small{position:absolute;bottom:-21px;left:50%;transform:translateX(-50%);font-size:7px;color:#68768e}
+.demo-activity{display:grid;gap:4px}
+.demo-activity div{display:grid;grid-template-columns:8px 1fr auto;gap:9px;align-items:center;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.055)}
+.demo-activity div:last-child{border:0}.demo-activity i{width:7px;height:7px;border-radius:50%;background:#7087ff}.demo-activity b{font-size:9px}.demo-activity span,.demo-activity time{font-size:8px;color:#65738a}
+.demo-toolbar{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:12px}
+.demo-pill{border:1px solid rgba(255,255,255,.09);background:#111925;color:#78869c;padding:8px 11px;border-radius:999px;font-size:8px;font-weight:800;cursor:pointer}
+.demo-pill.active,.demo-pill:hover{background:#e8edff;color:#19213a;border-color:#e8edff}
+.demo-table{width:100%;border-collapse:collapse;font-size:9px;min-width:660px}.demo-table th{text-align:left;color:#59677e;font-size:7px;letter-spacing:.09em;padding:10px;border-bottom:1px solid rgba(255,255,255,.07)}.demo-table td{padding:12px 10px;border-bottom:1px solid rgba(255,255,255,.055);color:#aab5c5}.demo-table strong{color:#ecf1f8}.demo-table tr:last-child td{border-bottom:0}
+.demo-status{display:inline-flex;padding:5px 7px;border-radius:999px;background:#17243a;color:#89a1ff;font-size:7px;font-weight:900}.demo-status.green{background:#13291f;color:#70d8a6}.demo-status.amber{background:#2c2515;color:#e7c56e}.demo-status.red{background:#30191d;color:#ef8995}
+.demo-assess{display:grid;grid-template-columns:220px 1fr;gap:12px}
+.demo-operatorlist{padding:8px}.demo-operator{width:100%;text-align:left;border:0;background:transparent;color:#8190a5;border-radius:11px;padding:11px;cursor:pointer}.demo-operator.active,.demo-operator:hover{background:#172236;color:#fff}.demo-operator strong{display:block;font-size:10px}.demo-operator span{font-size:8px;color:#68768b}
+.demo-snapshots{display:flex;gap:6px;margin-bottom:13px}.demo-snapshot{border:1px solid rgba(255,255,255,.09);background:#0e1623;color:#718098;padding:7px 9px;border-radius:9px;font-size:8px;cursor:pointer}.demo-snapshot.active{background:#3558ff;color:white;border-color:#3558ff}
+.score-row{display:grid;grid-template-columns:1fr 90px 190px;gap:12px;align-items:center;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.06)}.score-row:last-child{border:0}.score-label strong{display:block;font-size:10px}.score-label span{font-size:8px;color:#627086}.score-suggest{text-align:center;font-size:8px;color:#7e8ca1}.score-actions{display:flex;gap:5px;justify-content:flex-end}.score-btn{width:34px;height:30px;border-radius:8px;border:1px solid rgba(255,255,255,.1);background:#0e1623;color:#718097;font-size:8px;cursor:pointer}.score-btn.active{background:#e8edff;color:#172039;border-color:#e8edff}
+.demo-scoretotal{display:flex;align-items:center;justify-content:space-between;margin-top:16px;padding-top:16px;border-top:1px solid rgba(255,255,255,.08);gap:12px}.demo-scoretotal b{display:block;font-family:Georgia,serif;font-size:28px;font-weight:500}
+.demo-btn{border:1px solid rgba(255,255,255,.11);background:#182337;color:#dbe3ef;padding:9px 12px;border-radius:10px;font-size:8px;font-weight:900;cursor:pointer;transition:.2s}.demo-btn.primary{background:#3558ff;border-color:#3558ff;color:white}.demo-btn:hover{transform:translateY(-1px)}
+.pipeline{display:grid;grid-template-columns:repeat(6,1fr);gap:7px;margin:14px 0}.pipe{padding:12px 8px;border:1px solid rgba(255,255,255,.07);border-radius:12px;background:#0e1623;color:#5f6c82;font-size:7px;text-align:center}.pipe.done{background:#12271f;color:#67d49f;border-color:#204c39}.pipe.current{background:#182754;color:#9aadff;border-color:#3558ff}
+.candidate-card{display:grid;grid-template-columns:1fr auto;align-items:center;gap:16px}.candidate-card h4{font-size:13px;margin:0 0 4px}.candidate-card p{font-size:9px;color:#6d7a90;margin:0}
+.demo-reportcards{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.demo-reportcard{padding:17px;border:1px solid rgba(255,255,255,.075);border-radius:16px;background:#111925;cursor:pointer;transition:.2s}.demo-reportcard:hover{border-color:#506cff;transform:translateY(-2px)}.demo-reportcard small{font-size:7px;color:#68768d}.demo-reportcard h4{margin:7px 0 5px;font-size:12px}.demo-reportcard p{font-size:8px;color:#65738a;margin:0}
+.demo-notify{position:absolute;right:78px;top:64px;width:290px;border:1px solid rgba(255,255,255,.1);background:#101827;border-radius:16px;box-shadow:0 30px 80px rgba(0,0,0,.35);padding:8px;z-index:5;display:none}.demo-notify.open{display:block}.demo-notify div{padding:11px;border-radius:10px}.demo-notify div:hover{background:#172236}.demo-notify strong{display:block;font-size:9px}.demo-notify span{font-size:8px;color:#6c7a90}
+.demo-mobile-nav{display:none}
+@media(max-width:900px){
+  .demo-dialog{width:100%;height:100svh;border-radius:0}
+  .demo-shell{grid-template-columns:1fr}
+  .demo-side{display:none}
+  .demo-top{height:68px;padding:0 13px}.demo-topcopy strong{font-size:12px}.demo-topactions{gap:5px}.demo-icon{height:38px;min-width:38px;padding:0 10px}
+  .demo-stage{padding:15px 12px 88px}.demo-head{align-items:start;flex-direction:column}.demo-head h3{font-size:26px}
+  .demo-grid4{grid-template-columns:1fr 1fr}.demo-grid2,.demo-assess{grid-template-columns:1fr}.demo-operatorlist{display:flex;overflow:auto;gap:5px}.demo-operator{min-width:150px}
+  .score-row{grid-template-columns:1fr}.score-suggest{text-align:left}.score-actions{justify-content:flex-start}
+  .pipeline{display:flex;overflow:auto}.pipe{min-width:110px}
+  .demo-reportcards{grid-template-columns:1fr}
+  .demo-mobile-nav{display:flex;position:absolute;left:8px;right:8px;bottom:8px;padding:6px;background:rgba(15,22,35,.96);border:1px solid rgba(255,255,255,.08);border-radius:17px;gap:3px;z-index:10;overflow:auto}
+  .demo-mobile-nav button{min-width:72px;flex:1;border:0;background:transparent;color:#65738b;border-radius:11px;padding:9px 5px;font-size:7px;font-weight:800}.demo-mobile-nav button.active{background:#e8edff;color:#18213a}
+  .demo-notify{right:12px;top:58px;width:min(290px,calc(100% - 24px))}
+}
+@media(max-width:560px){
+  .demo-grid4{grid-template-columns:1fr 1fr;gap:7px}.demo-kpi{padding:13px;min-height:98px}.demo-kpi b{font-size:26px}
+  .demo-scoretotal{align-items:flex-start;flex-direction:column}
+  .candidate-card{grid-template-columns:1fr}
+}
+
 @media(max-width:980px){
   .hero-grid,.section-head,.about-grid,.projects-grid{grid-template-columns:1fr}
   .hero{min-height:auto;padding-top:42px}
@@ -403,11 +494,11 @@ dialog::backdrop{background:rgba(5,7,12,.78);backdrop-filter:blur(10px)}
         <div class="pf-top">
           <small id="projectLabel">PROJECT 01</small>
           <h3 id="projectTitle">PRISMA</h3>
-          <p id="projectText">Internal workforce monitoring system untuk membantu monitoring performa, training, OJT, evaluasi, reporting, dan workflow lintas peran.</p>
+          <p id="projectText">Role-based workforce development system yang menghubungkan monitoring, case lifecycle, assessment snapshots, recruitment-to-OJT, reporting, dan notification workflow.</p>
         </div>
         <div class="pf-bottom">
           <div class="tags" id="projectTags"><span>Workflow Design</span><span>Database Logic</span><span>Reporting</span></div>
-          <button class="btn" style="border-color:rgba(255,255,255,.22);color:white" id="projectDetail">Case study ↗</button>
+          <div class="pf-actions"><button class="btn" style="border-color:rgba(255,255,255,.22);color:white" id="projectDetail">Case study ↗</button><button class="btn demo-trigger" id="demoOpen">Interactive demo ↗</button></div>
         </div>
       </div>
 
@@ -465,6 +556,146 @@ dialog::backdrop{background:rgba(5,7,12,.78);backdrop-filter:blur(10px)}
 </main>
 
 <footer><div class="wrap footer-in"><span>© <span id="year"></span> Raehan Yanuar</span><a href="#home">Back to top ↑</a></div></footer>
+
+
+<dialog id="demoModal" class="demo-dialog">
+  <div class="demo-shell">
+    <aside class="demo-side">
+      <div class="demo-brand">
+        <span class="demo-brandmark">P</span>
+        <div><strong>PRISMA</strong><small>Portfolio Simulation</small></div>
+      </div>
+      <div class="demo-rolelabel">View as</div>
+      <div class="demo-roles" id="demoRoles">
+        <button class="demo-role active" data-role="TRAINER">Trainer</button>
+        <button class="demo-role" data-role="LEAD">Team Lead</button>
+        <button class="demo-role" data-role="SPV">Supervisor</button>
+        <button class="demo-role" data-role="HR">HR</button>
+      </div>
+      <div class="demo-navlabel">Workspace</div>
+      <nav class="demo-nav" id="demoNav">
+        <button class="active" data-view="overview"><i>⌂</i> Overview</button>
+        <button data-view="cases"><i>◇</i> Case Monitoring</button>
+        <button data-view="assessment"><i>✎</i> Assessment</button>
+        <button data-view="recruitment"><i>◎</i> Recruitment & OJT</button>
+        <button data-view="reports"><i>▤</i> Reporting</button>
+      </nav>
+      <div class="demo-disclaimer">SIMULATION ONLY<br>Semua nama, angka, status, dan data di layar ini bersifat sintetis. Tidak terhubung ke sistem produksi.</div>
+    </aside>
+
+    <section class="demo-main">
+      <header class="demo-top">
+        <div class="demo-topcopy">
+          <small id="demoRoleCaption">TRAINER WORKSPACE</small>
+          <strong id="demoTopTitle">Workforce Development Overview</strong>
+        </div>
+        <div class="demo-topactions">
+          <button class="demo-icon" id="demoNotif" aria-label="Demo notifications">● <span id="demoNotifCount">3</span></button>
+          <button class="demo-icon" id="demoReset">Reset</button>
+          <button class="demo-icon demo-close" id="demoClose" aria-label="Tutup demo">×</button>
+        </div>
+        <div class="demo-notify" id="demoNotifyPanel">
+          <div><strong>Kandidat siap OJT</strong><span>Nadia Putri sudah melewati gate interview.</span></div>
+          <div><strong>Case membutuhkan review</strong><span>1 temuan operasional menunggu tindak lanjut.</span></div>
+          <div><strong>Snapshot penilaian baru</strong><span>P2 Dimas Ardiansyah tersedia untuk review.</span></div>
+        </div>
+      </header>
+
+      <div class="demo-stage">
+        <section class="demo-view active" data-demo-view="overview">
+          <div class="demo-head">
+            <div><span class="demo-eyebrow">Synthetic workspace</span><h3>Workforce development at a glance.</h3></div>
+            <span class="demo-badge">Demo data only</span>
+          </div>
+          <div class="demo-grid4" id="demoKpis"></div>
+          <div class="demo-grid2">
+            <article class="demo-card">
+              <div class="demo-cardhead"><strong>Performance pulse</strong><span>Last 6 periods</span></div>
+              <div class="demo-cardbody"><div class="demo-bars" id="demoOverviewBars"></div></div>
+            </article>
+            <article class="demo-card">
+              <div class="demo-cardhead"><strong>Recent workflow activity</strong><span>Simulated</span></div>
+              <div class="demo-cardbody"><div class="demo-activity" id="demoActivity"></div></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="demo-view" data-demo-view="cases">
+          <div class="demo-head">
+            <div><span class="demo-eyebrow">Case lifecycle</span><h3>Monitor, review, follow up.</h3></div>
+            <p>Versi portfolio dari workflow case. Nama operator dan detail kejadian dibuat khusus untuk demo.</p>
+          </div>
+          <div class="demo-toolbar" id="caseFilters">
+            <button class="demo-pill active" data-status="ALL">All</button>
+            <button class="demo-pill" data-status="NEED REVIEW">Need Review</button>
+            <button class="demo-pill" data-status="VALID">Valid</button>
+            <button class="demo-pill" data-status="COACHING">Coaching</button>
+          </div>
+          <article class="demo-card"><div class="demo-cardbody" style="overflow:auto"><table class="demo-table"><thead><tr><th>OPERATOR</th><th>DIVISION</th><th>CASE</th><th>FOLLOW-UP</th><th>STATUS</th></tr></thead><tbody id="demoCaseRows"></tbody></table></div></article>
+        </section>
+
+        <section class="demo-view" data-demo-view="assessment">
+          <div class="demo-head">
+            <div><span class="demo-eyebrow">Assessment snapshots</span><h3>Form V3 simulation.</h3></div>
+            <p>Nilai bisa dipencet. Ada snapshot P1/P2/P3, suggestions, reset, dan score preview. Semuanya cuma state browser.</p>
+          </div>
+          <div class="demo-assess">
+            <article class="demo-card"><div class="demo-cardhead"><strong>Operators</strong><span>Synthetic roster</span></div><div class="demo-operatorlist" id="demoOperatorList"></div></article>
+            <article class="demo-card">
+              <div class="demo-cardhead"><strong id="assessmentTitle">Assessment</strong><span id="assessmentPeriod">Sep 2026</span></div>
+              <div class="demo-cardbody">
+                <div class="demo-snapshots" id="demoSnapshots"></div>
+                <div id="scoreRows"></div>
+                <div class="demo-scoretotal"><div><span style="font-size:8px;color:#69788f">CURRENT SCORE</span><b id="scoreTotal">-</b></div><div style="display:flex;gap:6px;flex-wrap:wrap"><button class="demo-btn" id="scoreReset">Reset to -</button><button class="demo-btn primary" id="scoreSuggest">Apply suggestions</button></div></div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="demo-view" data-demo-view="recruitment">
+          <div class="demo-head">
+            <div><span class="demo-eyebrow">Recruitment → development</span><h3>From candidate to OJT.</h3></div>
+            <p>Simulasi state transition sederhana untuk menunjukkan desain workflow, bukan sistem rekrutmen sungguhan.</p>
+          </div>
+          <article class="demo-card">
+            <div class="demo-cardbody">
+              <div class="candidate-card"><div><span class="demo-status green">SYNTHETIC CANDIDATE</span><h4 style="margin-top:9px">Nadia Putri</h4><p>Operational Support · Division A · candidate.demo@example.com</p></div><button class="demo-btn primary" id="candidateAdvance">Advance stage →</button></div>
+              <div class="pipeline" id="demoPipeline"></div>
+              <div class="demo-grid2">
+                <div class="demo-card" style="background:#0e1623"><div class="demo-cardbody"><span class="demo-eyebrow">Current state</span><h4 id="candidateState" style="margin:8px 0 4px;font-size:15px">New Candidate</h4><p id="candidateNote" style="font-size:9px;color:#6d7b90;margin:0">Administrative screening has not started.</p></div></div>
+                <div class="demo-card" style="background:#0e1623"><div class="demo-cardbody"><span class="demo-eyebrow">Gate principle</span><h4 style="margin:8px 0 4px;font-size:15px">Explicit handover</h4><p style="font-size:9px;color:#6d7b90;margin:0">Candidate only enters OJT after interview decision and explicit acceptance are completed.</p></div></div>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section class="demo-view" data-demo-view="reports">
+          <div class="demo-head">
+            <div><span class="demo-eyebrow">Read-only reporting</span><h3>Turn activity into decisions.</h3></div>
+            <p>Preview konsep daily, weekly, dan monthly reporting. Export di demo tidak membawa data internal.</p>
+          </div>
+          <div class="demo-reportcards">
+            <article class="demo-reportcard" data-report="Daily"><small>01 / DAILY</small><h4>Operational Daily</h4><p>Monitoring, case, coaching, dan aktivitas perkembangan dalam satu ringkasan.</p></article>
+            <article class="demo-reportcard" data-report="Weekly"><small>02 / WEEKLY</small><h4>Trainer Weekly</h4><p>Flexible week range, workload summary, dan progress follow-up.</p></article>
+            <article class="demo-reportcard" data-report="Monthly"><small>03 / MONTHLY</small><h4>Performance Monthly</h4><p>Assessment trend, separated ranking, OJT history, dan performance overview.</p></article>
+          </div>
+          <article class="demo-card" style="margin-top:12px">
+            <div class="demo-cardhead"><strong id="reportTitle">Monthly report preview</strong><span>Read only · demo</span></div>
+            <div class="demo-cardbody"><div class="demo-bars" id="demoReportBars"></div></div>
+          </article>
+        </section>
+      </div>
+
+      <nav class="demo-mobile-nav" id="demoMobileNav">
+        <button class="active" data-view="overview">Overview</button>
+        <button data-view="cases">Cases</button>
+        <button data-view="assessment">Form V3</button>
+        <button data-view="recruitment">OJT</button>
+        <button data-view="reports">Reports</button>
+      </nav>
+    </section>
+  </div>
+</dialog>
 
 <dialog id="projectModal">
   <div class="modal">
@@ -525,13 +756,13 @@ rail.addEventListener('scroll',()=>{
 const projects=[
 {
  title:'PRISMA',
- text:'Internal workforce monitoring system untuk membantu monitoring performa, training, OJT, evaluasi, reporting, dan workflow lintas peran.',
- tags:['Workflow Design','Database Logic','Reporting'],
- intro:'PRISMA lahir dari kebutuhan kerja nyata untuk menyatukan proses yang sebelumnya tersebar.',
+ text:'Role-based workforce development system yang menghubungkan monitoring, case lifecycle, assessment snapshots, recruitment-to-OJT, reporting, dan notification workflow.',
+ tags:['Role-based Workflow','Assessment','Recruitment → OJT','Reporting'],
+ intro:'PRISMA lahir dari kebutuhan kerja nyata untuk menyatukan proses people development dan monitoring yang sebelumnya tersebar.',
  problem:'Monitoring, evaluasi, training, OJT, dan reporting membutuhkan alur yang lebih terstruktur dan mudah ditelusuri.',
  approach:'Memetakan proses dan role, menyusun hak akses, struktur data, workflow, lalu mengembangkan sistem secara iteratif.',
  contribution:'Inisiasi kebutuhan, process mapping, system design, UI flow, implementasi, testing, dan continuous improvement.',
- outcome:'Satu workspace internal yang membantu proses Trainer / QC SDM menjadi lebih terstruktur dan konsisten.'
+ outcome:'Satu workflow lintas peran yang menghubungkan monitoring, assessment, development, OJT, dan reporting secara lebih terstruktur.'
 },
 {
  title:'Digital Assessment & Training',
@@ -574,6 +805,162 @@ q('#projectDetail').onclick=()=>{
 }
 q('#modalClose').onclick=()=>modal.close();
 modal.onclick=e=>{if(e.target===modal)modal.close()};
+
+
+/* ===== PRISMA INTERACTIVE DEMO ===== */
+const demoModal=q('#demoModal');
+const demoState={
+  role:'TRAINER',view:'overview',caseStatus:'ALL',operator:0,snapshot:0,candidateStage:0,
+  scores:{}
+};
+const demoRoleData={
+  TRAINER:{caption:'TRAINER WORKSPACE',title:'Workforce Development Overview',kpis:[['ACTIVE OPERATORS','52','Synthetic roster'],['NEED REVIEW','4','Case workflow'],['OJT ACTIVE','3','Development queue'],['ASSESSMENTS','18','This period']]},
+  LEAD:{caption:'TEAM LEAD WORKSPACE',title:'Division Monitoring Overview',kpis:[['TEAM MEMBERS','24','Division A'],['CASES THIS MONTH','11','Team scope'],['NEED FOLLOW-UP','3','Open workflow'],['OJT VISIBILITY','3','Read only']]},
+  SPV:{caption:'SUPERVISOR WORKSPACE',title:'Supervision & Performance Overview',kpis:[['ACTIVE OPERATORS','52','Division scoped'],['VALID CASES','19','Reviewed'],['NEED REVIEW','4','Pending'],['PERFORMANCE','87.4','Average score']]},
+  HR:{caption:'HR WORKSPACE',title:'People & Development Overview',kpis:[['ACTIVE CANDIDATES','7','Recruitment'],['READY FOR OJT','2','Passed gates'],['COACHING','5','In progress'],['REPORTS','12','Available']]}
+};
+const demoActivities={
+  TRAINER:[['Assessment','P2 snapshot completed','09:42'],['OJT','Candidate progress updated','09:18'],['Case','Coaching follow-up recorded','08:55'],['Project','Workflow improvement updated','08:20']],
+  LEAD:[['Case','New operational finding submitted','09:30'],['Monitoring','Division case list reviewed','09:05'],['OJT','New candidate visible','08:40'],['Team','Member performance opened','08:10']],
+  SPV:[['Review','Division case validated','09:37'],['Performance','Monthly trend opened','09:01'],['Discipline','Development notice reviewed','08:46'],['OJT','Progress monitored','08:11']],
+  HR:[['Recruitment','Candidate interview updated','09:44'],['OJT','Candidate ready for handover','09:22'],['Monitoring','Trainer activity reviewed','08:57'],['Report','Monthly people report opened','08:30']]
+};
+const demoCases=[
+ {name:'Dimas Ardiansyah',division:'A',caseName:'Late workflow acknowledgement',follow:'Review context',status:'NEED REVIEW'},
+ {name:'Bagas Pratama',division:'A',caseName:'Procedure deviation',follow:'Coaching scheduled',status:'COACHING'},
+ {name:'Salsa Mahendra',division:'B',caseName:'Documentation gap',follow:'Evidence checked',status:'VALID'},
+ {name:'Rizky Ramadhan',division:'A',caseName:'Communication finding',follow:'Closed after review',status:'VALID'},
+ {name:'Intan Lestari',division:'B',caseName:'Escalation timing',follow:'Awaiting trainer',status:'NEED REVIEW'}
+];
+const demoOperators=[
+ {name:'Dimas Ardiansyah',role:'Operator · Division A',suggest:[10,10,5,10,5]},
+ {name:'Salsa Mahendra',role:'Operator · Division B',suggest:[10,10,10,10,10]},
+ {name:'Bagas Pratama',role:'Operator · Division A',suggest:[5,10,5,10,10]}
+];
+const demoCriteria=['Discipline & attendance','Procedure accuracy','Communication','Operational response','Documentation'];
+const demoStages=[
+ ['New Candidate','Administrative screening has not started.'],
+ ['Admin Screening','Candidate passed initial document screening.'],
+ ['Interview Scheduled','Interview time and mode have been recorded.'],
+ ['Interview Passed','Interview decision recorded as passed.'],
+ ['Candidate Accepted','Candidate confirmed willingness to continue.'],
+ ['Ready for OJT','Candidate is ready for explicit Trainer handover.']
+];
+
+function demoKey(){return demoState.operator+'_'+demoState.snapshot}
+function getScores(){
+  const key=demoKey();
+  if(!demoState.scores[key]) demoState.scores[key]=Array(5).fill(null);
+  return demoState.scores[key];
+}
+function statusClass(s){return s==='VALID'?'green':s==='COACHING'?'amber':s==='NEED REVIEW'?'red':''}
+function renderDemoOverview(){
+  const role=demoRoleData[demoState.role];
+  q('#demoRoleCaption').textContent=role.caption;
+  q('#demoTopTitle').textContent=role.title;
+  q('#demoKpis').innerHTML=role.kpis.map(function(k){
+    return '<div class="demo-kpi"><small>'+k[0]+'</small><b>'+k[1]+'</b><span>'+k[2]+'</span></div>';
+  }).join('');
+  const vals=demoState.role==='HR'?[42,58,51,73,66,82]:demoState.role==='LEAD'?[54,63,59,72,68,79]:demoState.role==='SPV'?[61,67,70,74,82,87]:[48,55,63,69,76,84];
+  q('#demoOverviewBars').innerHTML=vals.map(function(v,i){
+    return '<span class="demo-bar" style="height:'+v+'%"><small>P'+(i+1)+'</small></span>';
+  }).join('');
+  q('#demoActivity').innerHTML=demoActivities[demoState.role].map(function(a){
+    return '<div><i></i><p style="margin:0"><b>'+a[0]+'</b><br><span>'+a[1]+'</span></p><time>'+a[2]+'</time></div>';
+  }).join('');
+}
+function renderCases(){
+  const rows=demoCases.filter(function(r){return demoState.caseStatus==='ALL'||r.status===demoState.caseStatus});
+  q('#demoCaseRows').innerHTML=rows.map(function(r){
+    return '<tr><td><strong>'+r.name+'</strong></td><td>Division '+r.division+'</td><td>'+r.caseName+'</td><td>'+r.follow+'</td><td><span class="demo-status '+statusClass(r.status)+'">'+r.status+'</span></td></tr>';
+  }).join('');
+}
+function renderOperators(){
+  q('#demoOperatorList').innerHTML=demoOperators.map(function(o,i){
+    return '<button class="demo-operator '+(i===demoState.operator?'active':'')+'" data-op="'+i+'"><strong>'+o.name+'</strong><span>'+o.role+'</span></button>';
+  }).join('');
+  q('#assessmentTitle').textContent=demoOperators[demoState.operator].name;
+  q('#demoSnapshots').innerHTML=['P1 · 04 Sep','P2 · 18 Sep','P3 · Optional'].map(function(s,i){
+    return '<button class="demo-snapshot '+(i===demoState.snapshot?'active':'')+'" data-snap="'+i+'">'+s+'</button>';
+  }).join('');
+  renderScores();
+  qa('#demoOperatorList .demo-operator').forEach(function(b){
+    b.onclick=function(){demoState.operator=Number(b.dataset.op);renderOperators();};
+  });
+  qa('#demoSnapshots .demo-snapshot').forEach(function(b){
+    b.onclick=function(){demoState.snapshot=Number(b.dataset.snap);renderOperators();};
+  });
+}
+function renderScores(){
+  const values=getScores(),suggestions=demoOperators[demoState.operator].suggest;
+  q('#scoreRows').innerHTML=demoCriteria.map(function(c,i){
+    const val=values[i];
+    const buttons=[null,0,5,10].map(function(v){
+      const label=v===null?'-':v;
+      return '<button class="score-btn '+(val===v?'active':'')+'" data-row="'+i+'" data-value="'+(v===null?'null':v)+'">'+label+'</button>';
+    }).join('');
+    return '<div class="score-row"><div class="score-label"><strong>'+c+'</strong><span>Assessment criterion '+(i+1)+'</span></div><div class="score-suggest">Suggestion <b style="color:#9dafef">'+suggestions[i]+'</b></div><div class="score-actions">'+buttons+'</div></div>';
+  }).join('');
+  qa('#scoreRows .score-btn').forEach(function(b){
+    b.onclick=function(){getScores()[Number(b.dataset.row)]=b.dataset.value==='null'?null:Number(b.dataset.value);renderScores();};
+  });
+  const filled=values.filter(function(v){return v!==null});
+  q('#scoreTotal').textContent=filled.length?(filled.reduce(function(a,b){return a+b;},0)/filled.length).toFixed(1):'-';
+}
+function renderPipeline(){
+  q('#demoPipeline').innerHTML=demoStages.map(function(s,i){
+    return '<div class="pipe '+(i<demoState.candidateStage?'done':i===demoState.candidateStage?'current':'')+'">'+(i+1)+' · '+s[0]+'</div>';
+  }).join('');
+  q('#candidateState').textContent=demoStages[demoState.candidateStage][0];
+  q('#candidateNote').textContent=demoStages[demoState.candidateStage][1];
+  q('#candidateAdvance').textContent=demoState.candidateStage===demoStages.length-1?'Reset pipeline ↺':'Advance stage →';
+}
+function renderReports(type){
+  type=type||'Monthly';
+  q('#reportTitle').textContent=type+' report preview';
+  const vals=type==='Daily'?[34,58,42,71,55,65]:type==='Weekly'?[46,52,68,64,79,73]:[58,63,71,76,83,88];
+  q('#demoReportBars').innerHTML=vals.map(function(v,i){
+    return '<span class="demo-bar" style="height:'+v+'%"><small>'+(['Mon','Tue','Wed','Thu','Fri','Sat'][i])+'</small></span>';
+  }).join('');
+}
+function openDemoView(view){
+  demoState.view=view;
+  qa('.demo-view').forEach(function(v){v.classList.toggle('active',v.dataset.demoView===view);});
+  qa('#demoNav button,#demoMobileNav button').forEach(function(b){b.classList.toggle('active',b.dataset.view===view);});
+  const titles={overview:'Workforce Development Overview',cases:'Case Monitoring',assessment:'Assessment & Snapshots',recruitment:'Recruitment to OJT',reports:'Reporting Hub'};
+  q('#demoTopTitle').textContent=titles[view]||'PRISMA Simulation';
+}
+function resetDemo(){
+  demoState.role='TRAINER';demoState.view='overview';demoState.caseStatus='ALL';demoState.operator=0;demoState.snapshot=0;demoState.candidateStage=0;demoState.scores={};
+  qa('#demoRoles .demo-role').forEach(function(b){b.classList.toggle('active',b.dataset.role==='TRAINER');});
+  qa('#caseFilters .demo-pill').forEach(function(b){b.classList.toggle('active',b.dataset.status==='ALL');});
+  renderDemoOverview();renderCases();renderOperators();renderPipeline();renderReports('Monthly');openDemoView('overview');
+}
+q('#demoOpen').onclick=function(){resetDemo();demoModal.showModal();};
+q('#demoClose').onclick=function(){demoModal.close();};
+demoModal.addEventListener('click',function(e){if(e.target===demoModal)demoModal.close();});
+qa('#demoNav button,#demoMobileNav button').forEach(function(b){b.onclick=function(){openDemoView(b.dataset.view);};});
+qa('#demoRoles .demo-role').forEach(function(b){
+  b.onclick=function(){
+    demoState.role=b.dataset.role;
+    qa('#demoRoles .demo-role').forEach(function(x){x.classList.toggle('active',x===b);});
+    renderDemoOverview();openDemoView('overview');
+  };
+});
+qa('#caseFilters .demo-pill').forEach(function(b){
+  b.onclick=function(){
+    demoState.caseStatus=b.dataset.status;
+    qa('#caseFilters .demo-pill').forEach(function(x){x.classList.toggle('active',x===b);});
+    renderCases();
+  };
+});
+q('#scoreReset').onclick=function(){demoState.scores[demoKey()]=Array(5).fill(null);renderScores();};
+q('#scoreSuggest').onclick=function(){demoState.scores[demoKey()]=demoOperators[demoState.operator].suggest.slice();renderScores();};
+q('#candidateAdvance').onclick=function(){demoState.candidateStage=demoState.candidateStage===demoStages.length-1?0:demoState.candidateStage+1;renderPipeline();};
+qa('.demo-reportcard').forEach(function(c){c.onclick=function(){renderReports(c.dataset.report);};});
+q('#demoReset').onclick=resetDemo;
+q('#demoNotif').onclick=function(){q('#demoNotifyPanel').classList.toggle('open');q('#demoNotifCount').textContent='0';};
+demoModal.addEventListener('close',function(){q('#demoNotifyPanel').classList.remove('open');});
 
 const portrait=q('.hero-photo');
 if(matchMedia('(hover:hover) and (pointer:fine)').matches && !matchMedia('(prefers-reduced-motion:reduce)').matches){
