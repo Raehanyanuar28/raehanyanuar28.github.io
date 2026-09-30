@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b1020" />
+  <meta name="description" content="Portfolio Raehan Yanuar — Trainer / QC SDM, Process Improvement, dan Internal System Development." />
+  <title>Raehan Yanuar — Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="progress" id="progressBar" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Navigasi utama">
+      <a class="brand" href="#home" aria-label="Kembali ke beranda">
+        <span class="brand-mark">RY</span>
+        <span class="brand-text">Raehan Yanuar</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Buka navigasi">
+        <span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#about">Tentang</a>
+        <a href="#journey">Journey</a>
+        <a href="#projects">Project</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Ganti tema">
+        <span class="theme-icon" aria-hidden="true">◐</span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">TRAINER / QC SDM · PROCESS IMPROVEMENT</p>
+          <h1>
+            Saya bekerja dengan manusia,
+            <span>proses, dan sistem.</span>
+          </h1>
+          <p class="hero-text">
+            Berawal dari operasional di lingkungan Call Center - Command Center,
+            berkembang melalui tanggung jawab BL, memperoleh penghargaan
+            <strong>Best Operator Excellent</strong>, kemudian dipercaya menjalankan
+            fungsi Trainer / QC SDM dan mengembangkan improvement digital untuk
+            mendukung pekerjaan sehari-hari.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#journey">Lihat perjalanan <span>↘</span></a>
+            <a class="btn btn-ghost" href="#projects">Lihat project</a>
+          </div>
+
+          <div class="hero-meta">
+            <div>
+              <span class="meta-label">Fokus</span>
+              <strong>People Development</strong>
+            </div>
+            <div>
+              <span class="meta-label">Pendekatan</span>
+              <strong>Process Improvement</strong>
+            </div>
+            <div>
+              <span class="meta-label">Teknologi</span>
+              <strong>Digital Workflow</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="portrait-wrap">
+            <div class="portrait-frame">
+              <img src="assets/profile.png" alt="Potret profesional Raehan Yanuar" />
+            </div>
+
+            <div class="floating-card card-one">
+              <span class="dot"></span>
+              <div>
+                <small>Current focus</small>
+                <strong>Trainer / QC SDM</strong>
+              </div>
+            </div>
+
+            <div class="floating-card card-two">
+              <small>Beyond the role</small>
+              <strong>Building better workflows</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#about" aria-label="Lanjut ke bagian Tentang">
+        <span>SCROLL</span>
+        <i></i>
+      </a>
+    </section>
+
+    <section class="section section-soft" id="about">
+      <div class="container about-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow">01 · TENTANG SAYA</p>
+          <h2>Bukan pindah profesi. <span>Memperluas cara kerja.</span></h2>
+        </div>
+
+        <div class="about-content reveal">
+          <p class="lead">
+            Saya tidak memulai perjalanan sebagai developer. Saya memulai dari sisi
+            operasional, memahami alur kerja dari dalam, lalu perlahan dipercaya
+            menangani tanggung jawab yang lebih besar.
+          </p>
+          <p>
+            Ketika menghadapi proses yang berulang, pelaporan yang tersebar, dan
+            kebutuhan evaluasi yang semakin kompleks, saya mulai menggunakan teknologi
+            sebagai alat untuk membuat pekerjaan lebih terstruktur, lebih mudah dipantau,
+            dan lebih efisien.
+          </p>
+          <p>
+            Karena itu, identitas profesional saya tetap berada pada
+            <strong>Trainer / QC SDM</strong>, dengan kekuatan tambahan pada
+            <strong>process improvement</strong>, perancangan workflow, dan pengembangan
+            sistem internal.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="journey">
+      <div class="container">
+        <div class="section-heading row reveal">
+          <div>
+            <p class="eyebrow">02 · MY JOURNEY</p>
+            <h2>Dari operator sampai <span>membangun sistem.</span></h2>
+          </div>
+          <div class="slider-controls">
+            <button class="icon-btn" id="journeyPrev" type="button" aria-label="Journey sebelumnya">←</button>
+            <button class="icon-btn" id="journeyNext" type="button" aria-label="Journey berikutnya">→</button>
+          </div>
+        </div>
+
+        <div class="journey-shell reveal">
+          <div class="journey-track" id="journeyTrack" tabindex="0" aria-label="Timeline perjalanan karier">
+            <article class="journey-card active" data-index="0">
+              <div class="journey-index">01</div>
+              <div class="journey-content">
+                <span class="journey-kicker">THE BEGINNING</span>
+                <h3>Operator</h3>
+                <p>
+                  Memulai dari lingkungan operasional Call Center - Command Center.
+                  Fase ini membentuk pemahaman langsung tentang monitoring, komunikasi,
+                  disiplin kerja, ketelitian, dan ritme operasional.
+                </p>
+                <div class="tag-row">
+                  <span>Operations</span><span>Monitoring</span><span>Discipline</span>
+                </div>
+              </div>
+              <div class="journey-line"></div>
+            </article>
+
+            <article class="journey-card" data-index="1">
+              <div class="journey-index">02</div>
+              <div class="journey-content">
+                <span class="journey-kicker">GREATER RESPONSIBILITY</span>
+                <h3>BL Role</h3>
+                <p>
+                  Mendapat kepercayaan pada tanggung jawab yang lebih luas. Bukan lagi
+                  hanya menjalankan pekerjaan sendiri, tetapi mulai ikut membantu kontrol,
+                  koordinasi, dan konsistensi proses kerja tim.
+                </p>
+                <div class="tag-row">
+                  <span>Coordination</span><span>Control</span><span>Ownership</span>
+                </div>
+              </div>
+              <div class="journey-line"></div>
+            </article>
+
+            <article class="journey-card" data-index="2">
+              <div class="journey-index">03</div>
+              <div class="journey-content">
+                <span class="journey-kicker">RECOGNITION</span>
+                <h3>Best Operator Excellent</h3>
+                <p>
+                  Kinerja operasional mendapatkan pengakuan melalui penghargaan
+                  <strong>Best Operator Excellent</strong>, menjadi milestone penting
+                  sebelum tanggung jawab berikutnya berkembang.
+                </p>
+                <div class="tag-row">
+                  <span>Performance</span><span>Consistency</span><span>Recognition</span>
+                </div>
+              </div>
+              <div class="journey-line"></div>
+            </article>
+
+            <article class="journey-card" data-index="3">
+              <div class="journey-index">04</div>
+              <div class="journey-content">
+                <span class="journey-kicker">PEOPLE DEVELOPMENT</span>
+                <h3>Ditunjuk sebagai Trainer</h3>
+                <p>
+                  Mulai mendampingi proses belajar, evaluasi, coaching, dan pengembangan
+                  operator. Di fase ini pengalaman operasional berubah menjadi pengetahuan
+                  yang harus bisa ditransfer dan dievaluasi secara sistematis.
+                </p>
+                <div class="tag-row">
+                  <span>Training</span><span>Evaluation</span><span>Coaching</span>
+                </div>
+              </div>
+              <div class="journey-line"></div>
+            </article>
+
+            <article class="journey-card" data-index="4">
+              <div class="journey-index">05</div>
+              <div class="journey-content">
+                <span class="journey-kicker">PROCESS IMPROVEMENT</span>
+                <h3>Digital Experimentation</h3>
+                <p>
+                  Mulai membenahi proses menggunakan spreadsheet, automation, Apps Script,
+                  dan workflow digital untuk evaluasi, reporting, training, serta monitoring.
+                </p>
+                <div class="tag-row">
+                  <span>Spreadsheet</span><span>Automation</span><span>Workflow</span>
+                </div>
+              </div>
+              <div class="journey-line"></div>
+            </article>
+
+            <article class="journey-card" data-index="5">
+              <div class="journey-index">06</div>
+              <div class="journey-content">
+                <span class="journey-kicker">INTERNAL SYSTEM</span>
+                <h3>PRISMA</h3>
+                <p>
+                  Eksperimen berkembang menjadi sistem internal untuk membantu monitoring,
+                  evaluasi, OJT, reporting, role-based workflow, dan pengembangan SDM secara
+                  lebih terstruktur.
+                </p>
+                <div class="tag-row">
+                  <span>System Design</span><span>Reporting</span><span>Workforce</span>
+                </div>
+              </div>
+              <div class="journey-line"></div>
+            </article>
+          </div>
+
+          <div class="journey-pagination" id="journeyPagination" aria-label="Pilih tahap perjalanan"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="projects">
+      <div class="container">
+        <div class="section-heading light row reveal">
+          <div>
+            <p class="eyebrow">03 · SELECTED PROJECTS</p>
+            <h2>Improvement yang lahir dari <span>pekerjaan nyata.</span></h2>
+          </div>
+          <p class="section-sidecopy">
+            Project di sini bukan untuk mengganti identitas profesi,
+            tetapi menunjukkan bagaimana teknologi saya pakai sebagai alat kerja.
+          </p>
+        </div>
+
+        <div class="project-stage reveal">
+          <div class="project-visual" id="projectVisual">
+            <div class="mock-window">
+              <div class="mock-top">
+                <span></span><span></span><span></span>
+                <div class="mock-address">internal-workflow.local</div>
+              </div>
+              <div class="mock-body">
+                <aside class="mock-sidebar">
+                  <b>PRISMA</b>
+                  <i class="active"></i><i></i><i></i><i></i><i></i>
+                </aside>
+                <div class="mock-main">
+                  <div class="mock-header">
+                    <div>
+                      <small>WORKFORCE OVERVIEW</small>
+                      <h4>Performance & Development</h4>
+                    </div>
+                    <span class="mock-pill">Internal</span>
+                  </div>
+                  <div class="mock-stats">
+                    <div><small>Monitoring</small><strong>Live</strong></div>
+                    <div><small>Workflow</small><strong>Structured</strong></div>
+                    <div><small>Reporting</small><strong>Integrated</strong></div>
+                  </div>
+                  <div class="mock-chart">
+                    <span style="height:38%"></span>
+                    <span style="height:62%"></span>
+                    <span style="height:48%"></span>
+                    <span style="height:76%"></span>
+                    <span style="height:56%"></span>
+                    <span style="height:88%"></span>
+                    <span style="height:70%"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-copy">
+            <span class="project-number" id="projectNumber">01 / 03</span>
+            <h3 id="projectTitle">PRISMA — Internal Workforce Monitoring System</h3>
+            <p id="projectText">
+              Sistem internal yang mengintegrasikan kebutuhan monitoring performa,
+              training, OJT, evaluasi, reporting, dan alur kerja lintas peran.
+            </p>
+            <div class="project-tags" id="projectTags">
+              <span>Workflow Design</span>
+              <span>Cloudflare Worker</span>
+              <span>Database</span>
+              <span>Reporting</span>
+            </div>
+
+            <div class="project-actions">
+              <button class="btn btn-light" id="projectDetailBtn" type="button">Lihat detail</button>
+              <div class="slider-controls">
+                <button class="icon-btn light" id="projectPrev" type="button" aria-label="Project sebelumnya">←</button>
+                <button class="icon-btn light" id="projectNext" type="button" aria-label="Project berikutnya">→</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="impact">
+      <div class="container impact-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow">04 · HOW I WORK</p>
+          <h2>Masalah tidak selalu butuh <span>software besar.</span></h2>
+          <p>
+            Yang saya cari lebih dulu adalah titik friksi dalam proses. Teknologi baru
+            dipakai ketika memang membantu alur kerja menjadi lebih jelas.
+          </p>
+        </div>
+
+        <div class="impact-steps">
+          <article class="impact-step reveal">
+            <span>01</span>
+            <h3>Observe</h3>
+            <p>Memahami proses dari sisi orang yang benar-benar menjalankannya.</p>
+          </article>
+          <article class="impact-step reveal">
+            <span>02</span>
+            <h3>Structure</h3>
+            <p>Memetakan kebutuhan, alur, tanggung jawab, dan titik keputusan.</p>
+          </article>
+          <article class="impact-step reveal">
+            <span>03</span>
+            <h3>Improve</h3>
+            <p>Menyederhanakan proses dan mengurangi pekerjaan berulang yang tidak perlu.</p>
+          </article>
+          <article class="impact-step reveal">
+            <span>04</span>
+            <h3>Build</h3>
+            <p>Menerjemahkan improvement menjadi tools, automation, atau sistem internal.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="skills">
+      <div class="container">
+        <div class="section-heading row reveal">
+          <div>
+            <p class="eyebrow">05 · CAPABILITIES</p>
+            <h2>Keahlian yang tumbuh <span>dari kebutuhan kerja.</span></h2>
+          </div>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <span class="skill-no">A</span>
+            <h3>Training & QC SDM</h3>
+            <p>Training, coaching, evaluasi, OJT, monitoring perkembangan, dan quality control.</p>
+          </article>
+          <article class="skill-card reveal">
+            <span class="skill-no">B</span>
+            <h3>Process Improvement</h3>
+            <p>Problem mapping, workflow design, simplifikasi proses, dan struktur reporting.</p>
+          </article>
+          <article class="skill-card reveal">
+            <span class="skill-no">C</span>
+            <h3>Digital Workflow</h3>
+            <p>Spreadsheet systems, Apps Script, automation, data flow, dan digital forms.</p>
+          </article>
+          <article class="skill-card reveal">
+            <span class="skill-no">D</span>
+            <h3>Internal System Development</h3>
+            <p>UI workflow, role-based access, database logic, reporting, dan system iteration.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="container contact-card reveal">
+        <div>
+          <p class="eyebrow">06 · CONTACT</p>
+          <h2>Kerja utama saya tetap tentang <span>manusia dan proses.</span></h2>
+          <p>
+            Teknologi adalah salah satu alat yang saya gunakan untuk membuat keduanya
+            bekerja lebih baik.
+          </p>
+        </div>
+
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:EMAIL_KAMU">Email</a>
+          <a class="btn btn-ghost" href="LINK_LINKEDIN" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="btn btn-ghost" href="https://github.com/Raehanyanuar28" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Raehan Yanuar</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <dialog class="project-modal" id="projectModal" aria-labelledby="modalTitle">
+    <div class="modal-shell">
+      <button class="modal-close" id="modalClose" type="button" aria-label="Tutup detail project">×</button>
+      <span class="modal-kicker" id="modalKicker">CASE STUDY</span>
+      <h2 id="modalTitle">Project</h2>
+      <p id="modalIntro"></p>
+
+      <div class="modal-grid">
+        <div>
+          <small>Problem</small>
+          <p id="modalProblem"></p>
+        </div>
+        <div>
+          <small>Approach</small>
+          <p id="modalApproach"></p>
+        </div>
+        <div>
+          <small>My Contribution</small>
+          <p id="modalContribution"></p>
+        </div>
+        <div>
+          <small>Outcome</small>
+          <p id="modalOutcome"></p>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
